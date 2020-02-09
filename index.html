@@ -1,0 +1,15 @@
+---
+layout: home
+---
+
+<h1>
+  Listado de elecciones en Latinoamérica en el año 2020
+</h1>
+
+{% for eleccion in site.elecciones %}
+  <div style="margin-top: 16px">
+    <h3>{{eleccion.titulo}} - {{eleccion.pais}}</h3>
+    <a  href="{{eleccion.url}}">Ver mas</a>
+    <hr/>
+  </div>
+{% endfor %}
