@@ -9,7 +9,7 @@ layout: home
 {% for eleccion in site.elecciones %}
   <div style="margin-top: 16px">
     <h3>{{eleccion.titulo}} - {{eleccion.pais}}</h3>
-    <a  href="{{eleccion.url}}">Ver mas</a>
+    <a  href="{{eleccion.url | prepend:site.baseurl}}">Ver mas</a>
     <hr/>
   </div>
 {% endfor %}
